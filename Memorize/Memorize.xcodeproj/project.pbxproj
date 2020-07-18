@@ -11,7 +11,7 @@
 		4B7DF4B224B571FF00422482 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7DF4B124B571FF00422482 /* EmojiMemoryGame.swift */; };
 		4B9C4C4A24B415BC00981315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9C4C4924B415BC00981315 /* AppDelegate.swift */; };
 		4B9C4C4C24B415BC00981315 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9C4C4B24B415BC00981315 /* SceneDelegate.swift */; };
-		4B9C4C4E24B415BC00981315 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9C4C4D24B415BC00981315 /* ContentView.swift */; };
+		4B9C4C4E24B415BC00981315 /* EmojiMemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9C4C4D24B415BC00981315 /* EmojiMemoryGameView.swift */; };
 		4B9C4C5024B415C100981315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B9C4C4F24B415C100981315 /* Assets.xcassets */; };
 		4B9C4C5324B415C100981315 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B9C4C5224B415C100981315 /* Preview Assets.xcassets */; };
 		4B9C4C5624B415C100981315 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9C4C5424B415C100981315 /* LaunchScreen.storyboard */; };
@@ -23,7 +23,7 @@
 		4B9C4C4624B415BC00981315 /* Memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B9C4C4924B415BC00981315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B9C4C4B24B415BC00981315 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4B9C4C4D24B415BC00981315 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4B9C4C4D24B415BC00981315 /* EmojiMemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGameView.swift; sourceTree = "<group>"; };
 		4B9C4C4F24B415C100981315 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B9C4C5224B415C100981315 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4B9C4C5524B415C100981315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 				4B7DF4B124B571FF00422482 /* EmojiMemoryGame.swift */,
 				4B9C4C4924B415BC00981315 /* AppDelegate.swift */,
 				4B9C4C4B24B415BC00981315 /* SceneDelegate.swift */,
-				4B9C4C4D24B415BC00981315 /* ContentView.swift */,
+				4B9C4C4D24B415BC00981315 /* EmojiMemoryGameView.swift */,
 				4B9C4C4F24B415C100981315 /* Assets.xcassets */,
 				4B9C4C5424B415C100981315 /* LaunchScreen.storyboard */,
 				4B9C4C5724B415C100981315 /* Info.plist */,
@@ -155,7 +155,7 @@
 				4B9C4C4A24B415BC00981315 /* AppDelegate.swift in Sources */,
 				4B9C4C4C24B415BC00981315 /* SceneDelegate.swift in Sources */,
 				4B7DF4B024B56FF000422482 /* MemoryGame.swift in Sources */,
-				4B9C4C4E24B415BC00981315 /* ContentView.swift in Sources */,
+				4B9C4C4E24B415BC00981315 /* EmojiMemoryGameView.swift in Sources */,
 				4B7DF4B224B571FF00422482 /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +292,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Memorize/Preview Content\"";
 				DEVELOPMENT_TEAM = 86SW527Y9L;
@@ -303,6 +304,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.diegowendel.Memorize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -312,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Memorize/Preview Content\"";
 				DEVELOPMENT_TEAM = 86SW527Y9L;
@@ -323,6 +326,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.diegowendel.Memorize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
